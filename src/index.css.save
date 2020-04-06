@@ -13,9 +13,12 @@ body {
 }
 
 .logo{
-  font-family: 'Archivo Black';
+  
 }
 
 h1, h2, h3, h4, h6{
   font-family: 'Archivo Black'
 }
+          <Grid item>
+            <h2>Spicy</h2>
+          </Grid>

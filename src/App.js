@@ -1,24 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense, lazy, useEffect, useState } from 'react';
+import { Route, Switch } from 'react-router-dom';
+import NProgress from 'nprogress';
+import './styles/nprogress.css';
+import Header from './components/header/header';
+import Drawer from '@material-ui/core/Drawer';
+import DrawerMenu from './components/drawerMenu';
+
+const Loader = () => {
+  useEffect(()=> {
+    NProgress.start();
+    return ()=> NProgress.done();
+  },[]);
+  return <p />
+}
+
+const Home = lazy(()=> import('./pages/home'));
 
 function App() {
+  const [drawer, setDrawer] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header onDrawer={()=> setDrawer(true)}/>
+      <div>
+        <Drawer anchor="right" open={drawer} onClose={()=> setDrawer(false)}>
+          <DrawerMenu onClose={()=>setDrawer(false)} />
+        </Drawer>
+        <Suspense fallback={<Loader />}>
+          <Switch>
+            <Route exact path="/" component={Home} />
+          </Switch>
+        </Suspense>
+      </div>
     </div>
   );
 }
