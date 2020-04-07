@@ -28,7 +28,7 @@ function App() {
         </Drawer>
         <Suspense fallback={<Loader />}>
           <Switch>
-            <Route exact path="/" component={Home} />
+            <Route exact path="/spicy" component={Home} />
           </Switch>
         </Suspense>
       </div>
