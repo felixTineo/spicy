@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/spicy/static/css/main.2099719d.chunk.css",
-    "main.js": "/spicy/static/js/main.b4441439.chunk.js",
-    "main.js.map": "/spicy/static/js/main.b4441439.chunk.js.map",
+    "main.js": "/spicy/static/js/main.bca75b3e.chunk.js",
+    "main.js.map": "/spicy/static/js/main.bca75b3e.chunk.js.map",
     "runtime-main.js": "/spicy/static/js/runtime-main.be167593.js",
     "runtime-main.js.map": "/spicy/static/js/runtime-main.be167593.js.map",
     "static/js/2.4b15b2b4.chunk.js": "/spicy/static/js/2.4b15b2b4.chunk.js",
@@ -12,7 +12,7 @@
     "static/js/4.d076d990.chunk.js": "/spicy/static/js/4.d076d990.chunk.js",
     "static/js/4.d076d990.chunk.js.map": "/spicy/static/js/4.d076d990.chunk.js.map",
     "index.html": "/spicy/index.html",
-    "precache-manifest.8ac0c616576a823c44f1b49510cd253c.js": "/spicy/precache-manifest.8ac0c616576a823c44f1b49510cd253c.js",
+    "precache-manifest.55cd8b734e61304406ed602bf5cb747c.js": "/spicy/precache-manifest.55cd8b734e61304406ed602bf5cb747c.js",
     "service-worker.js": "/spicy/service-worker.js",
     "static/css/main.2099719d.chunk.css.map": "/spicy/static/css/main.2099719d.chunk.css.map",
     "static/js/2.4b15b2b4.chunk.js.LICENSE.txt": "/spicy/static/js/2.4b15b2b4.chunk.js.LICENSE.txt",
@@ -31,6 +31,6 @@
     "static/js/runtime-main.be167593.js",
     "static/js/2.4b15b2b4.chunk.js",
     "static/css/main.2099719d.chunk.css",
-    "static/js/main.b4441439.chunk.js"
+    "static/js/main.bca75b3e.chunk.js"
   ]
 }
